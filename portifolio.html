@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Varanasi Harish — Portfolio</title>
+  <meta name="description" content="Varanasi Harish - Java Full Stack & Machine Learning. Accessible portfolio showcasing projects, skills and contact." />
+  <style>
+    :root{
+      --bg:#f7f8fb;--card:#ffffff;--accent:#0b69ff;--muted:#6b7280;--text:#0f1724;
+      --radius:14px;--container:980px
+    }
+    [data-theme='dark']{
+      --bg:#0b1220;--card:#071024;--accent:#3aa0ff;--muted:#9aa6b2;--text:#e6eef8
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.55}
+    a{color:var(--accent)}
+    .wrap{max-width:var(--container);margin:36px auto;padding:32px;background:var(--card);border-radius:var(--radius);box-shadow:0 10px 40px rgba(2,6,23,0.06)}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:62px;height:62px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7cc0ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:clamp(20px,3vw,28px)}
+    .meta{color:var(--muted);font-size:14px}
+    nav a{margin-left:12px;text-decoration:none;font-weight:600}
+
+    main{margin-top:22px}
+    section{margin:20px 0;padding:18px;border-radius:12px}
+    .card{background:transparent}
+    h2{margin:0 0 8px 0;font-size:18px}
+    .summary p{margin:8px 0 0}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .skills ul{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;padding-left:18px;margin:8px 0}
+
+    .projects article{margin-bottom:14px}
+    .project-meta{color:var(--muted);font-size:13px}
+    .links a{display:inline-block;margin-right:8px}
+
+    footer{margin-top:20px;color:var(--muted);font-size:14px}
+
+    /* controls */
+    .controls{display:flex;gap:10px;align-items:center}
+    button{font:inherit}
+    .chip{background:rgba(11,105,255,0.09);color:var(--accent);padding:6px 10px;border-radius:999px;border:0}
+
+    /* accessibility */
+    a:focus,button:focus{outline:3px solid rgba(11,105,255,0.18);outline-offset:3px}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:16px;top:16px;width:auto;height:auto;padding:8px 12px;background:var(--card);border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.12)}
+
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .wrap{margin:18px;padding:22px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrap" role="document">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">VH</div>
+        <div>
+          <h1>Varanasi Harish</h1>
+          <div class="meta">Java Full-stack • Machine Learning </div>
+        </div>
+      </div>
+
+      <div class="controls" aria-hidden="false">
+        <div class="meta links" style="text-align:right">
+          <div><a href="mailto:varanasiharish290@gmail.com">varanasiharish290@gmail.com</a> • +91 8121653847</div>
+          <div style="margin-top:6px"><a href="https://www.linkedin.com/in/varanasi-harish-905702282" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://github.com/harish170704" target="_blank" rel="noopener">GitHub</a></div>
+        </div>
+        <div>
+          <button id="themeToggle" aria-pressed="false" title="Toggle color scheme" class="chip">Dark</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="card summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Professional Summary</h2>
+        <p>I build accessible, user-first web applications and ML prototypes — voice-driven interfaces for blind users, real-time chat with WebSocket, and ML-backed recommendation systems. Strong in Java, Spring Boot, React, and end-to-end product delivery.</p>
+      </section>
+
+      <div class="grid">
+        <div>
+          <section class="card projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Selected Projects</h2>
+
+            <article>
+              <h3>Bridging Silence — Accessible Real-time Chat</h3>
+              <div class="project-meta">React • Spring Boot • WebSocket • Web Speech API • MongoDB</div>
+              <p>Voice-first chat flows for blind users with instant UI updates for sighted users. Implemented WebSocket message handling and voice prompts.(Repo & demo links in contact section.)</p>
+            </article>
+
+            <article>
+              <h3>Medicinal Recommendation System</h3>
+              <div class="project-meta">Python • Flask  • Machine Learning</div>
+              <p>Symptom-to-recommendation ML system served via a Flask API and integrated into a React UI to suggest medicines, diets, and precautions with explanations.</p>
+            </article>
+
+          
+
+          </section>
+
+          <section class="card experience" aria-labelledby="exp-heading">
+            <h2 id="exp-heading">Experience</h2>
+            <p><strong>Machine Learning Intern — Cantilever Labs</strong><br/>Hyderabad — May 2024 to Jun 2024</p>
+            <ul>
+              <li>Built a Machine Learning model-serving for a medicinal recommendation prototype.</li>
+              <li>Integrated backend with frontend and improved UX for non-technical users.</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <aside>
+          <section class="card skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Key Skills</h2>
+            <ul>
+              <li>Java, JavaScript </li>
+              <li>React.js, SQL , HTML , CSS</li>
+              <li>Spring Boot</li>
+              <li>MongoDB</li>
+            </ul>
+          </section>
+
+          <section class="card contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact & Links</h2>
+            <p class="project-meta">Reach out for demos, code, or collaboration.</p>
+            <p>
+              <a href="https://github.com/harish170704" target="_blank" rel="noopener">GitHub</a><br>
+              <a href="https://www.linkedin.com/in/varanasi-harish-905702282" target="_blank" rel="noopener">LinkedIn</a><br>
+              <a href="https://leetcode.com/varanasiharish290" target="_blank" rel="noopener">LeetCode</a>
+            </p>
+          </section>
+
+          <section class="card education" aria-labelledby="edu-heading">
+            <h2 id="edu-heading">Education</h2>
+            <p>B.Tech, Computer Science & Engineering — Geethanjali College (2022–2026)</p>
+          </section>
+        </aside>
+      </div>
+
+      
+    </main>
+  </div>
+
+  <script>
+    // Theme toggle (persist in localStorage)
+    const btn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('vh-theme');
+    function applyTheme(t){
+      if(t==='dark'){
+        root.setAttribute('data-theme','dark');
+        btn.textContent = 'Light';
+        btn.setAttribute('aria-pressed','true');
+      } else {
+        root.removeAttribute('data-theme');
+        btn.textContent = 'Dark';
+        btn.setAttribute('aria-pressed','false');
+      }
+    }
+    // initial
+    if(saved) applyTheme(saved);
+    else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) applyTheme('dark');
+    // toggle
+    btn.addEventListener('click', ()=>{
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+      applyTheme(next==='dark' ? 'dark' : 'light');
+      localStorage.setItem('vh-theme', next==='dark' ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
